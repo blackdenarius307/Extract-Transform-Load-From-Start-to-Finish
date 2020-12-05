@@ -1,6 +1,6 @@
 # <div align = "center"> ETL_Trafic_and_Covid </div>
 ## <div align = "center"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
-
+![cover_art.png](pictures/covid_transport.png)
 ### <div align= "center"> Goal </div>
 We are looking at traffic accident data from January 21st, 2020 to June 2020 and comparing it to Covid data, to see if the proliferation of the virus has had an effect on traffic accidents due to the various shutdowns put into place. Our expectation is that when these measures are put into place, Traffic accidents will decrease. 
 
