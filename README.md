@@ -26,8 +26,9 @@ We are looking at traffic accident data from January 21st, 2020 to June 2020 and
     - [x] Remove Unneeded columns and dates and create new CSV with only relevant data
   - [x] Convert CSV's to Dataframes
     - [x] Normalize Timestamps in both Dataframes to only include YYYY-MM-DD
-  - [ ] Create SQL Database
-  - [ ] Manipulate data with Pandas (Data Cleaning)
+  - [x] Create SQL Database
+  - [ ] Manipulate data
+    -[x] Created new column in Covid dataframe to add 2 letter State abbreviations.
   - [ ] Plot anything we need to plot.
   - [ ] Move data to SQL
 
