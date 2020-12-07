@@ -17,6 +17,13 @@ State varchar(30),
 cases int,
 deaths int )
 
+create table covid_by_day
+(Date date,
+ Value int,
+ seven_day_average int,
+ parts_per_million int
+)
+
  
  
 
