@@ -82,8 +82,11 @@ DECLARE
 
 /* loop through every possible day, including end date */
 
-	While currentdate <= enddate
+
 	begin
+	
+		While currentdate <= enddate 
+	loop
    /* insert all rows for all counties and all states that have the current date...all at once */
    insert into coviddays(date,county,state2,deaths,newdeaths)
    select
@@ -93,38 +96,45 @@ DECLARE
    deaths = case
             when covid_df.deaths is not null
              then covid_df.deaths
-             else IsNull((select IsNull(previousday.deaths,0)
-                from covid_df previousday limit 1
+             else COALESCE((select COALESCE(previousday.deaths,0)  
+                from covid_df previousday 
                 where previousday.date < currentdate
                 and previousday.county = statecountylist.county
                 and previousday.state2 = statecountylist.state2
-                order by previousday.date desc),0)
-            end,
-   newdeaths = 0
+                order by previousday.date desc limit 1),0)
+            end
+	,   newdeaths = 0
    from statecountylist 
    left outer join covid_df 
-   on covid_df.date = CurrentDate
+   on covid_df.date = currentdate
    and covid_df.county = statecountylist.county
    and covid_df.state2 = statecountylist.state2
 
    /* advance to next day */
    set currentdate = dateadd(day,1,currentdate)
-end
+end  
 update coviddays set
 NewDeaths = deaths - case
-   when exists (select top 1 1 --limt 1 here or below
+   when exists (select * --limt 1 here or below
                 from coviddays previouscovidday 
                 where previouscovidday.date < coviddays.date
                 and previouscovidday.county = coviddays.county
-                and previouscovidday.state2 = coviddays.state2)
-    then IsNull((select top 1 IsNull(previouscovidday2.deaths,0)
+                and previouscovidday.state2 = coviddays.state2
+			   limit 1)
+    then COALESCE((select COALESCE(previouscovidday2.deaths,0)
                 from covid_df previouscovidday2 
                 where previouscovidday2.date < coviddays.date
                 and previouscovidday2.county = coviddays.county
                 and previouscovidday2.state2 = coviddays.state2
-                order by previouscovidday2.date desc),0)
+                order by previouscovidday2.date desc limit 1),0)
     else (select 0)
-    end $$
+	
+	end 
+	
+	end loop
+
+end $$;  
+
 --drop table #statecountylist
 
 
