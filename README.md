@@ -50,3 +50,7 @@ Based on pairing New York traffic accident data and covid data, no connection wa
 
 
 ![Death_Traffic_plot.png](pictures/Death_Traffic_plot.png)
+
+![Death_Traffic_plot.png](pictures/Cal_Death_Traffic_plot.png)
+
+![Death_Traffic_plot.png](pictures/Mon_Death_Traffic_plot.png)
