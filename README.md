@@ -30,7 +30,8 @@ We are examining traffic accident data for the state of New York from May 1st, 2
   - [x] Manipulate data
     - [x] Created new column in Covid dataframe to add 2 letter State abbreviations.
     - [x] Group by dates in both dataframes
-  - [ ] Plot both deaths and accidents versus date in their own plots respectively
+  - [x] Plot both deaths and accidents versus date in a line plot.
+  - [ ] Write up an analysis
 
 
 #### <div align = "center"> Replication Steps </div>
@@ -42,3 +43,7 @@ We are examining traffic accident data for the state of New York from May 1st, 2
 6. Run transformSQL.sql for covid_df to create a column with 2 letter state abbreviations.
 7. transformSQL.sql adds in a column that calculates new deaths per day as well. This was necessary for our purposes.
 8. Run first 4 cells of plotsSQL.ipynb to abbreviate data in both dataframes to the timeframes we are charting. This will generate 2 CSV's for use in plotting.
+9. Run PLOT_covid_data_pH.ipynb to plot data on line graph
+
+#### <div align = "center"> Analysis </div>
+Our data indicates that short term changes in the numbers of covid deaths does not seem to greatly affect short term accident trends.
