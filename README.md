@@ -1,4 +1,4 @@
-# <div align = "center"> ETL_Trafic_and_Covid </div>
+# <div align = "center"> ETL_Traffic_and_Covid </div>
 ## <div align = "center"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
 ![cover_art.png](pictures/covid_transport.png)
 ### <div align= "center"> Goal </div>
@@ -27,8 +27,9 @@ We are looking at traffic accident data from January 21st, 2020 to June 2020 and
   - [x] Convert CSV's to Dataframes
     - [x] Normalize Timestamps in both Dataframes to only include YYYY-MM-DD
   - [x] Create SQL Database
-  - [ ] Manipulate data
+  - [x] Manipulate data
     -[x] Created new column in Covid dataframe to add 2 letter State abbreviations.
+    -[x] Group by dates in both dataframes
   - [ ] Plot anything we need to plot.
   - [ ] Move data to SQL
 
