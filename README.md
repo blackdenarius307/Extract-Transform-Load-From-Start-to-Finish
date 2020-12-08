@@ -58,3 +58,5 @@ California data showed the same lack of connection between datasets. They fluctu
 Indiana's data was by far the most interesting, but no correlation appears to be in place. Covid deaths exceeding traffic accidents was quite a surprise. 
 
 ![Death_Traffic_plot.png](pictures/Mon_Death_Traffic_plot.png)
+
+This database allows for quick comparison of covid and traffic data for any of the 50 states thanks to the steps taken in cleaning up the data and transforming it.   
