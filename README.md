@@ -41,4 +41,5 @@ We are looking at traffic accident data from January 21st, 2020 to June 2020 and
 4. Run CreateTablesETL.sql in postgres
 5. Import accident_data_new.csv and us_counties_covid19_daily.csv into accident_df and covid_df respectively
 6. Run transformSQL.sql for covid_df to create a column with 2 letter state abbreviations.
-7. Run first 4 cells of plotsSQL.ipynb to abbreviate data in both dataframes to the timeframes we are charting. This will generate 2 CSV's for use in plotting.
+7. transformSQL.sql adds in a column that calculates new deaths per day as well. This was necessary for our purposes.
+8. Run first 4 cells of plotsSQL.ipynb to abbreviate data in both dataframes to the timeframes we are charting. This will generate 2 CSV's for use in plotting.
