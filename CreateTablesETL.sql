@@ -1,4 +1,4 @@
- 
+ /*create table sql uesd to set up initila tables for the raw data*/
 create table accident_df (
 ID varchar(10) Primary Key,
 Start_Time date,
@@ -26,4 +26,11 @@ create table covid_by_day
 
  
  
+create table coviddays(
+
+date date,
+county varchar (60),
+state2 varchar(2),
+deaths int,
+newdeaths int)
 

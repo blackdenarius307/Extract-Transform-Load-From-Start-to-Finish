@@ -1,51 +1,9 @@
-/*declare
-@startdate = '2020-01-01'
-@enddate = '2020-12-31'
-@currentdate = @startdate
-
-create temp table coviddays
-(
-	date date,
-	county varchar(60),
-	state2 varchar(2)
-	deaths int,
-	NewDeaths int
-	
-)
-
-
-while @currentdate <= @enddate
-begin
-insert into coviddays 
-select @currentdate,
-county,
-state2,
-
-
-
-
-/*declare
-
-@startddate = '2020-01-01'
-@enddate = '2020-12-01' 
-@CURRENTdate = @startdate
+/* 
+  This SQL was to =loop through the coavid data, which was using a 
+  cumlative figure for the nunmber of deaths, and placing a new column 
+  to accertain a detahs per day
+*/
  
-
-
-SELECT  INTO date number OF widgets INTO temptable
-
-WHILE @CURRENTdate <= @endate
-BEGIN 
-INSERT INTO temptable
-SELECT @currentdate =date column
-
-(SELECT sum(deaths), FROM datatable
-WHERE date <= @current
-
-SET @currentdate = DATEADD(DAY,1,@currentdate)
-end
-*/
-*/
  
  
 create table Coviddays(
