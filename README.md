@@ -46,4 +46,5 @@ We are examining traffic accident data for the state of New York from May 1st, 2
 9. Run PLOT_covid_data_pH.ipynb to plot data on line graph
 
 #### <div align = "center"> Analysis </div>
-Our data indicates that short term changes in the numbers of covid deaths does not seem to greatly affect short term accident trends. We were expecting to see a dip in traffic accidents over this time frame due to covid lockdowns and such, but the data does not support that hypothesis. 
+Our data indicates that short term changes in the numbers of covid deaths does not seem to greatly affect short term accident trends. We were expecting to see a dip in traffic accidents over this time frame due to covid lockdowns and such, but the data does not support that hypothesis.
+![Death_Traffic_plot.png](pictures/Death_Traffic_plot.png)
