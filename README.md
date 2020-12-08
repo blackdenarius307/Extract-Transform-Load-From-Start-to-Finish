@@ -51,6 +51,10 @@ Based on pairing New York traffic accident data and covid data, no connection wa
 
 ![Death_Traffic_plot.png](pictures/Death_Traffic_plot.png)
 
+California data showed the same lack of connection between datasets. They fluctuated wildly, but neither set of data appeared to correlate, positively or negatively.
+
 ![Death_Traffic_plot.png](pictures/Cal_Death_Traffic_plot.png)
+
+Indiana's data was bt far the most interesting, but no correlation appears to be in place. Covid deaths exceeding traffic accidents was quite a surprise. 
 
 ![Death_Traffic_plot.png](pictures/Mon_Death_Traffic_plot.png)
