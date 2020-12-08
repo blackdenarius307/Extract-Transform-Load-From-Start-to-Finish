@@ -1,9 +1,9 @@
 # <div align = "center"> ETL_Traffic_and_Covid </div>
-## <div align = "center"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
+## <div align = "left"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
 ![cover_art.png](pictures/covid_transport.png)
-### <div align= "center"> Goal </div>
+### <div align= "left"> Goal </div>
 We are examining traffic accident data for the state of New York from May 1st, 2020 to May 15th, 2020 and comparing it to Covid fatality data in the same area and time to gauge whether or not short term severe virus activity (deaths) resulted in any short term shifts in traffic accident occurrence. 
-#### <div align = "center"> Sources </div>
+#### <div align = "left"> Sources </div>
   
   1. [Accident Information](https://www.kaggle.com/sobhanmoosavi/us-accidents?select=US_Accidents_June20.csv)
      - This is a countrywide car accident dataset, which covers 49 states of the USA. The accident data are collected from February 2016 to June 2020, using two APIs that provide streaming traffic incident (or event) data. These APIs broadcast traffic data captured by a variety of entities, such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. Currently, there are about 3.5 million accident records in this dataset.
@@ -18,7 +18,7 @@ We are examining traffic accident data for the state of New York from May 1st, 2
      - 7 mb
      - Columns: Deaths, Time, City, State
 
-#### <div align = "center"> Tasks </div>
+#### <div align = "left"> Tasks </div>
   - [x] Create Repository
   - [x] Create Slack Channel
   - [x] Pare down Accident Database in Pandas, as size prevents uploading to Github, then upload this to the Github
@@ -34,7 +34,7 @@ We are examining traffic accident data for the state of New York from May 1st, 2
   - [x] Write up an analysis
 
 
-#### <div align = "center"> Replication Steps </div>
+#### <div align = "left"> Replication Steps </div>
 1. Download Full CSV's fro sources above.
 2. Run AccidentData.ipynb to pare down Accident Data to a usable data size
 3. Run DataTransform.ipynb to transform dates in both CSV's to the proper format
@@ -45,7 +45,7 @@ We are examining traffic accident data for the state of New York from May 1st, 2
 8. Run first 4 cells of plotsSQL.ipynb to abbreviate data in both dataframes to the timeframes we are charting. This will generate 2 CSV's for use in plotting.
 9. Run PLOT_covid_data_pH.ipynb to plot data on line graph
 
-#### <div align = "center"> Analysis </div>
+#### <div align = "left"> Analysis </div>
 Our data indicates that short term changes in the numbers of covid deaths does not seem to greatly affect short term accident trends. We were expecting to see a dip in traffic accidents over this time frame due to covid lockdowns and such, but the data does not support that hypothesis.
 
 
