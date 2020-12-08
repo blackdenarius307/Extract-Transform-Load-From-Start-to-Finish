@@ -27,12 +27,18 @@ We are looking at traffic accident data from January 21st, 2020 to June 2020 and
   - [x] Convert CSV's to Dataframes
     - [x] Normalize Timestamps in both Dataframes to only include YYYY-MM-DD
   - [x] Create SQL Database
+  - [x] Move data to SQL
   - [x] Manipulate data
-    -[x] Created new column in Covid dataframe to add 2 letter State abbreviations.
-    -[x] Group by dates in both dataframes
-  - [ ] Plot anything we need to plot.
-  - [ ] Move data to SQL
+    - [x] Created new column in Covid dataframe to add 2 letter State abbreviations.
+    - [x] Group by dates in both dataframes
+  - [ ] Plot both deaths and accidents versus date in their own plots respectively
+
 
 #### <div align = "center"> Replication Steps </div>
-1. Download Full CSV's
-2. Run Python
+1. Download Full CSV's fro sources above.
+2. Run AccidentData.ipynb to pare down Accident Data to a usable data size
+3. Run DataTransform.ipynb to transform dates in both CSV's to the proper format
+4. Run CreateTablesETL.sql in postgres
+5. Import accident_data_new.csv and us_counties_covid19_daily.csv into accident_df and covid_df respectively
+6. Run transformSQL.sql for covid_df to create a column with 2 letter state abbreviations.
+7. Run first 4 cells of plotsSQL.ipynb to abbreviate data in both dataframes to the timeframes we are charting. This will generate 2 CSV's for use in plotting.
