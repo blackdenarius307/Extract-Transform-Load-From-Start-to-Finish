@@ -31,7 +31,7 @@ We are examining traffic accident data for the state of New York from May 1st, 2
     - [x] Created new column in Covid dataframe to add 2 letter State abbreviations.
     - [x] Group by dates in both dataframes
   - [x] Plot both deaths and accidents versus date in a line plot.
-  - [ ] Write up an analysis
+  - [x] Write up an analysis
 
 
 #### <div align = "center"> Replication Steps </div>
