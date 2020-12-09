@@ -1,4 +1,4 @@
-# <div align = "center"> ETL_Traffic_and_Covid </div>
+# <div align = "center"> ETL Traffic and Covid </div>
 ## <div align = "left"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
 ![cover_art.png](pictures/covid_transport.png)
 ### <div align= "left"> Goal </div>
