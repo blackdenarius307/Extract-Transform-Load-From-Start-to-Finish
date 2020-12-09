@@ -2,7 +2,7 @@
 ## <div align = "left"> Exploring relationships between traffic accidents and Covid-19 pandemic. </div>
 ![cover_art.png](pictures/covid_transport.png)
 ### <div align= "left"> Goal </div>
-We are examining traffic accident data for the state of New York from May 1st, 2020 to May 15th, 2020 and comparing it to Covid fatality data in the same area and time to gauge whether or not short term severe virus activity (deaths) resulted in any short term shifts in traffic accident occurrence. 
+An analysis was conducted to determine if a relationship between traffic accidents and Covid-19 fatalities can be observed. Traffic and Covid-19 fatality data was collected from May 1St , 2020 to May 15th, 2020 and compiled into SQL database for analysis. This enabled the ability to identify potential relationships between severe virus activity (deaths) and shifts in traffic accident occurrence.  This study was limited to New York, California, and Indiana to validate the data collected. The database contains data for the United States which would enable additional studies. 
 #### <div align = "left"> Sources </div>
   
   1. [Accident Information](https://www.kaggle.com/sobhanmoosavi/us-accidents?select=US_Accidents_June20.csv)
